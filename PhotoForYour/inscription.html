@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inscription</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript">
+    function verifMdp(){
+        var mdp1 = document.getElementById('mdp').value ; //la div du mdp à vérifier
+        var mdp2 = document.getElementById('mdp1').value ; //la div du mdp à répéter
+        if(mdp1 != mdp2 ){
+            alert ("Les mot de passes ne sont pas identiques");
+            document.getElementById('mdp').style.border = "solid 2px red";
+            document.getElementById('mdp1').style.border = "solid 2px red";
+        }
+      }
+  </script>
+
+</head>
+
+<body>
+	<!--BARRE DE NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Photo for you</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Photos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Acheter</a>
+              <a class="dropdown-item" href="#">Vendre</a>
+              <a class="dropdown-item" href="#">Les plus populaires</a>
+              <a class="dropdown-item" href="#">Les nouveautés</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#encreTarif ">Tarifs</a>
+          </li>
+        </ul>
+        <!-- formulaire de recherche -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Votre rechercher" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+        <!-- bouton d'inscription -->
+        <a class="btn btn-dark" style="margin-left: 1%; "href="connexion.html">Connexion</a>
+        <a class="btn btn-dark" style="margin-left: 1%;" href="inscription.html">Inscription</a>
+      </div>
+    </nav>
+    <!-- Fin de barre de navigation -->
+
+	<div class="card bg-light" style="margin-top: 3%; padding-bottom: 4.5%; text-align: center;">
+		<article class="card-body mx-auto" style="max-width: 400px;">
+			<h4 class="card-title mt-3 text-center">Inscription</h4>
+			<form>
+				<div class="form-group input-group">
+					<div class="input-group-prepend">
+					    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+					 </div>
+			        <input name="" class="form-control" placeholder="Nom" type="text" required>
+			        <input name="" class="form-control" placeholder="Prénom" type="text" required>
+			    </div>
+			    <div class="form-group input-group">
+			    	<div class="input-group-prepend">
+					    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+					 </div>
+			        <input name="" class="form-control" placeholder="Adresse Mail" type="email" required>
+			    </div>
+			    <div class="form-group input-group">
+			    	<div class="input-group-prepend">
+					    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+					</div>
+			    	<input name="" class="form-control" placeholder="Numéro de téléphone" type="tel" required>
+			    </div>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+            </div>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>Choisir</option>
+              <option>Client</option>
+              <option>Photographe</option>
+            </select>
+          </div> 
+			    <div class="form-group input-group">
+			    	<div class="input-group-prepend">
+					    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+					</div>
+			        <input class="form-control" placeholder="Mot de passe" type="password" id="mdp" required>
+			    </div>
+			    <div class="form-group input-group">
+			    	<div class="input-group-prepend">
+					    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+					</div>
+			        <input class="form-control" placeholder="Remettre le mot de passe" id="mdp1" type="password">
+			    </div>
+			    <div class="form-group">
+			        <button type="submit" class="btn btn-primary btn-block" onclick="verifMdp()">Inscription</button>
+			    </div>    
+			    <p class="text-center">Vous avez déjà un compte? <a href="">Connexion</a> </p>                                                                 
+			</form>
+		</article>
+
+	</div> 
+
+	<!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: #e9ecef; padding: 2% 0;">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <!-- Texte a gauche -->
+          <div class="col-md-3 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Photo for you</h5>
+            <p>::© 2019 :PhotoForYou ::</p>
+          </div>
+
+          <!-- Separation avec les autres colonnes -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Colonne 1 -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Liens</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Nos promotions</a></li>
+              <li><a href="#">Les photographes</a></li>
+              <li><a href="#">Notre charte qualité</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 2 -->
+          <div class="col-md-3 mb-md-0 mb-3"> 
+            <h5 class="text-uppercase">Aides</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Tuto</a></li>
+              <li><a href="#">Aide en ligne</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 -->
+          <div class="col-md-3 mb-md-0 mb-3"> 
+            <h5 class="text-uppercase">Nous connaitre</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Adresse</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- Fin footer -->
+</body>
+</html>

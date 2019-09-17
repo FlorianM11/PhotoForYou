@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body style="margin: 0; padding: 0;">
+
+    <!--BARRE DE NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Photo for you</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Photos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Acheter</a>
+              <a class="dropdown-item" href="#">Vendre</a>
+              <a class="dropdown-item" href="#">Les plus populaires</a>
+              <a class="dropdown-item" href="#">Les nouveautés</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#encreTarif ">Tarifs</a>
+          </li>
+        </ul>
+        <!-- formulaire de recherche -->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Votre rechercher" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+        </form>
+        <!-- bouton d'inscription -->
+        <a class="btn btn-dark" style="margin-left: 1%; "href="connexion.html">Connexion</a>
+        <a class="btn btn-dark" style="margin-left: 1%;" href="inscription.html">Inscription</a>
+      </div>
+    </nav>
+    <!-- Fin de barre de navigation -->
+
+    <div class="container">
+
+    <!--LOGO + TEXTE-->
+      <div class="text-center">
+        <img style=" margin-top: 5%;" src="img/logo.png">
+        <p style="font-size: 60px;">PhotoForYou</p>
+        <p style="font-size: 22px;">Des pros au service des professionnels de la communication.</p>
+      </div>
+
+      <!--CARROUSEL-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- Premierer image -->
+          <div class="carousel-item active">
+            <img src="img/nature.jpg" class="d-block w-100">
+          </div>
+          <!-- Deuxieme image -->
+          <div class="carousel-item">
+            <img src="img/nature2.jpg" class="d-block w-100">
+          </div>
+          <!-- Troisieme image -->
+          <div class="carousel-item">
+            <img src="img/nature3.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <!-- Bouton precedent -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Précédent</span>
+        </a>
+        <!-- Bouton suivant -->
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Suivant</span>
+        </a>
+      </div>
+      <!-- Fin carrousel -->
+
+      <!--JUMBOTRON-->
+      <div class="jumbotron">
+        <p>Moins de temps à chercher. Plus de resultats. Découvrez les images qui vous aideront à vous démarquer</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Inscrivez-vous!</a>
+      </div>
+      <!-- Fin jumbotron -->
+
+      <!--CARTES-->
+
+      <div class="card-deck">
+        <!--carte 1-->
+        <div class="card bg-warning" style="color: white;" >
+          <img src="img/paysages.jpg" class="card-img-top img-fluid" alt="Responsive image" >
+          <!-- Titre dans image -->
+          <h3 style="position: absolute; top: 10px; color: white; left: 10px;">Paysages</h3>
+          <div class="card-body">
+            <!-- Description carte -->
+            <h3 class="card-title">Les paysages</h3>
+            <p class="card-text" style="font-size: 20px;">Une collection de photos extraordinaires réalisées par des photographes professionnels. Redecouvrez la planète terre !</p>
+            <button type="button" class="btn btn-primary">Je veux voir...</button>
+          </div>
+          <!-- Date de mise a jour -->
+          <div class="card-footer" style="margin-top: 20%;">
+            <small class="text-muted" style="color: white !important;">Dernière mise à jour : 1 Septembre 2019</small>
+          </div>
+        </div>
+
+        <!--carte 2-->
+        <div class="card bg-success" style="color: white;">
+          <img src="img/portrait.jpg" class="card-img-top img-fluid" alt="Responsive image" >
+          <!-- Titre dans image -->
+          <h3 style="position: absolute; top: 10px; color: white; left: 10px;">Portraits</h3>
+          <div class="card-body">
+            <!-- Description carte -->
+            <h3 class="card-title">Les portraits</h3>
+            <p class="card-text" style="font-size: 20px;">Toutes les expressions, tous les visages du sourire aux larmes. Vous trouverez le portrait qu'il vous faut pour vos publications.</p>
+            <button type="button" class="btn btn-primary">Je veux voir...</button>
+          </div>
+          <!-- Date de mise a jour -->
+          <div class="card-footer">
+            <small class="text-muted" style="color: white !important;">Dernière mise à jour : 23 Aout 2019</small>
+          </div>
+        </div>
+
+        <!--carte 3-->
+        <div class="card bg-danger" style="color: white;">
+          <img src="img/evenement.jpg" class="card-img-top img-fluid" alt="Responsive image" >
+          <!-- Titre dans image -->
+          <h3 style="position: absolute; top: 10px; color: white; left: 10px;">Evenements</h3>
+          <div class="card-body">
+            <!-- Description carte -->
+            <h3 class="card-title">Les évenements</h3>
+            <p class="card-text" style="font-size: 20px;">Que ce soit les mariages, férias, soirée DJ. Vous trouverez la photo pour mettre en valeur votre événement.</p>
+            <button type="button" class="btn btn-primary">Je veux voir...</button>
+          </div>
+          <!-- Date de mise a jour -->
+          <div class="card-footer">
+            <small class="text-muted" style="color: white !important;">Dernière mise à jour : 20 Juillet 2019</small>
+          </div>
+        </div>
+      </div>
+      <!-- Fin cartes -->
+
+      <!-- TARIFS
+      Titre des tarifs -->
+      <div class="text-center" id="encreTarif">
+        <h1 style="margin-top: 7%;">Tarifs</h1>
+        <p style=" margin-bottom: 4%;">Une tarification flexible.</p>
+      </div>
+      
+      <!-- Premiere carte de tarif -->
+      <div class="card-deck" style="margin-bottom: 3%;">
+        <div class="card text-center" >
+          <div class="card-header"><h2>Essai</h2></div>
+          <div class="card-body">
+            <h1 class="card-title"><strong>0€</strong><spam class="text-muted"> / mois</spam></h1>
+            <p class="card-text">5 photos offertes </br> Usage privé.</p>
+            <a href="#" class="btn btn-outline-primary">Faire un essai</a>
+          </div>
+        </div>  
+
+        <!-- Deuxieme carte de tarif -->
+        <div class="card text-center">
+          <div class="card-header"><h2>Formule Découverte</h2></div>
+          <div class="card-body">
+            <h1 class="card-title"><strong>9€</strong><spam class="text-muted"> / mois</spam></h1>
+            <p class="card-text">20 crédits </br> 20% de remise sur les photos</p>
+            <a href="#" class="btn btn-primary">Acheter</a>
+          </div>
+        </div>  
+
+        <!-- Troisieme carte de tarif -->
+        <div class="card text-center">
+          <div class="card-header"><h2>Formule Pro</h2></div>
+          <div class="card-body">
+            <h1 class="card-title"><strong>16€</strong><spam class="text-muted"> / mois</spam></h1>
+            <p class="card-text">60 crédits </br> 30% de remise sur les photos</p>
+            <a href="#" class="btn btn-primary">Acheter</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- Fin carte des tarifs -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: #e9ecef; padding: 2% 0;">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <!-- Texte a gauche -->
+          <div class="col-md-3 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Photo for you</h5>
+            <p>::© 2019 :PhotoForYou ::</p>
+          </div>
+
+          <!-- Separation avec les autres colonnes -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+
+          <!-- Colonne 1 -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Liens</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Nos promotions</a></li>
+              <li><a href="#">Les photographes</a></li>
+              <li><a href="#">Notre charte qualité</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 2 -->
+          <div class="col-md-3 mb-md-0 mb-3"> 
+            <h5 class="text-uppercase">Aides</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Tuto</a></li>
+              <li><a href="#">Aide en ligne</a></li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 -->
+          <div class="col-md-3 mb-md-0 mb-3"> 
+            <h5 class="text-uppercase">Nous connaitre</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Adresse</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- Fin footer -->
+
+  </body>
+
+</html>
